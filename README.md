@@ -1,16 +1,61 @@
-# Template C++
+# 🚀 C++ Project Template
 
-This is a template project for C++ projects.
-It includes:
-  - CMake Compilation for normal running and for testing.
-  - Basic main and usage files to go straight into the specifics of the project.
-  - A generic .gitignore for C++ project as well as prepared for the needs of this template's bases.
-  - A GitHub Workflows file which will:
-      1. Compile the code
-      2. Run the code
-      3. Run unit tests in the test/ folder
-      4. Create a coverage summary
-      5. Upload the coverage summary to the gh-pages branch of the project and display a visual HTML summary of the coverage for easy and quick annalisis.
+A ready-to-use **C++ project template** designed to help you skip boilerplate setup and jump straight into development.
 
-You can modify this base code with the needs of the project, it is just to not waste a day setting up the project and start directly developing your ideas.
-Feel free to contact me with any questdions or suggestions you may have.
+This template provides a solid, modern base for most C++ projects, whether personal, academic, or experimental.
+
+---
+
+## ✨ What’s included
+
+### 🛠 Build system
+- **CMake-based compilation**
+  - Standard build for running the project
+  - Separate configuration for unit testing
+
+### 📁 Project structure
+- Basic `main` and `usage` files to start coding immediately
+- Clean, extensible layout you can adapt to your needs
+- A **generic `.gitignore`** suitable for most C++ projects and CI environments
+
+### 🧪 Testing & CI
+- **Google Test** integration for unit testing (`test/` directory)
+- **GitHub Actions workflow** that automatically:
+  1. Builds the project
+  2. Runs the executable
+  3. Executes unit tests
+  4. Generates a coverage report
+  5. Publishes an **HTML coverage report** to the `gh-pages` branch for quick visual inspection
+
+---
+
+## 📊 Code coverage
+- Coverage is generated using `gcov` + `lcov`
+- An easy-to-read **HTML report** is available via GitHub Pages
+- Helps quickly identify untested code paths and files
+
+---
+
+## 🎯 Purpose
+
+This template exists to **save you time**.
+
+Instead of spending hours setting up:
+- CMake
+- Tests
+- CI
+- Coverage
+- GitHub Pages
+
+You can start **implementing your ideas immediately** and iterate from a reliable foundation.
+
+---
+
+## 🤝 Contributing & feedback
+
+Feel free to:
+- Adapt this template to your own workflow
+- Suggest improvements
+- Ask questions or report issues
+
+📬 Don’t hesitate to reach out if you have ideas, feedback, or need help customizing it.
