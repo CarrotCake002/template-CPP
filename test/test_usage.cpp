@@ -1,6 +1,12 @@
 #include "usage.hpp"
 #include "gtest/gtest.h"
 
+TEST(ErrorHandling, HandleCorrectInput) {
+    const char *argv[] = { "./project_name" };
+
+    EXPECT_EQ(errorHandling(1, argv), 0);
+}
+
 struct ErrorCase {
     const char *arg;
     int expected;
@@ -8,9 +14,9 @@ struct ErrorCase {
 
 class ErrorHandlingHelpTest : public ::testing::TestWithParam<ErrorCase> {};
 
-TEST_P(ErrorHandlingHelpTest, HandleCorrectHelpFlags) {
+TEST_P(ErrorHandlingHelpTest, HandleHelpFlags) {
     const auto &param = GetParam();
-    const char *argv[] = { "./plazza",  param.arg};
+    const char *argv[] = { "./project_name",  param.arg};
 
     EXPECT_EQ(errorHandling(2, argv), param.expected);
 }
