@@ -36,6 +36,24 @@ This template provides a solid, modern base for most C++ projects, whether perso
 
 ---
 
+## 🌐 Accessing the coverage report (GitHub Pages)
+
+Once the CI workflow runs successfully on the main branch, the coverage report is published automatically to **GitHub Pages**.
+
+### How to access it:
+1. Go to your repository on GitHub
+2. Navigate to **Settings → Pages**
+3. Ensure the source branch is set to **`gh-pages`**
+4. Open the provided URL, usually in the form:
+
+```https://<username>.github.io/<repository-name>/```
+
+This page displays an interactive HTML report showing **coverage per file and per line**, making it easy to see what is not being tested.
+
+> 💡 The `gh-pages` branch is fully managed by CI — you never need to modify it manually.
+
+---
+
 ## 🎯 Purpose
 
 This template exists to **save you time**.
